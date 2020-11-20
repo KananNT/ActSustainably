@@ -1,0 +1,208 @@
+/*-----------*/
+/*FLIPCARD*/
+.h3 {
+  color: white;
+  font-size: 18;
+  font-weight: bold;
+}
+
+.flip {
+  color: white;
+  font-size: 16;
+  font-weight: bold;
+}
+
+.fliptext {
+  color: white;
+  font-size: 14;
+  font-weight: bold;
+}
+
+/* FLIPCARD - source: https://www.w3schools.com/howto/howto_css_flip_card.asp*/
+.flip-card {
+  background-color: transparent;
+  width: 182px;
+  height: 361px;
+  max-width: 182px;
+  margin: 30px auto;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 182px;
+  height: 361px;
+}
+/* Style the back side */
+.flip-card-back {
+  background-color: #292929;
+  top: 0%;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 0px;
+}
+.flip-card-back p {
+  font-family: 'Comfortaa', cursive;
+  color: rgba(250,250,250,0.7);
+  margin: 20px;
+}
+.placename {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0,0,0,0.4);
+  width: 100%;
+  height: 30%;
+}
+.placename h3 {
+  margin-top: 20px;
+}
+.placename p {
+  font-family: 'Comfortaa', cursive;
+  color: rgba(250,250,250,0.7);
+  font-weight: bold;
+}
+.flip-card-back p {
+  line-height: 140%;
+}
+.flip-card{
+  display: inline-block;
+  padding: 20px;
+}
+/* Homepage */
+
+body {
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  background: url("Biomass.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0px;
+}
+
+h1 {color: white;
+  padding: 60px;
+  font-family: 'Comfortaa', cursive;
+}
+
+p {color: white;
+font-size: 30px;
+font-weight: bold;
+font-family: 'Comfortaa', cursive;
+}
+
+.carousel-inner {
+  color: white;
+height: 400px;
+font-family: 'Comfortaa', cursive;
+}
+
+.carousel-indicators {
+  height: 0px;
+}
+
+div.item {
+  padding-top:110px;
+}
+
+a.nav-link:link
+{
+   color: white;
+   text-decoration: none;
+   font-size: 50px;
+   font-weight: 300;
+}
+a.nav-link:visited
+{
+   color: white;
+   text-decoration: none;
+}
+a.nav-link:hover
+{
+   color: white;
+   text-decoration: none;
+}
+a.nav-link:active
+{
+   color: white;
+   text-decoration: none;
+}
+
+.copyright {
+  color: white;
+  font-size: 12;
+  font-weight: bold;
+}
+
+.text-off-white {
+ color: white;
+}
+
+div.container1 {
+    font-family:  'Comfortaa', cursive;
+    margin: 6px auto;
+    padding: 15px;
+    top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+#actsustainably {
+  position: absolute;
+  left: 30px;
+  top: 0;
+  font-size: 15px;
+}
+
+div.container1 a {
+    color: #FFF;
+    font-size: 15px;
+    margin: 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+div.gray a:before
+{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+div.gray a:hover:before
+{
+    height: 100%;
+}
+
+.scrolltotop
+{
+color: white;
+}
+
