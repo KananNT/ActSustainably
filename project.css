@@ -90,7 +90,8 @@
 body {
   text-align: center;
   font-family: 'Comfortaa', cursive;
-  background: url("Biomass.jpg");
+  /* background: url("Biomass.jpg"); */
+  background: url("Background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -205,4 +206,3 @@ div.gray a:hover:before
 {
 color: white;
 }
-
