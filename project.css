@@ -47,6 +47,13 @@
   position: absolute;
   width: 182px;
   height: 361px;
+  /*
+    INSTRUCTOR COMMENT
+    This is needed to make sure that the back of the card is not visible,
+    it removes odd borders on the side.
+  */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 /* Style the back side */
 .flip-card-back {
@@ -63,9 +70,15 @@
 }
 .placename {
   position: absolute;
-  top: 85%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /*
+    INSTRUCTOR COMMENT
+    As you know that you want this section positioned at the bottom
+    the best thing to do is just to tell browser to place it 0 pixels from the bottom.
+
+    This way you don't need to worry about what height is (otherwise you need 100% - height).
+  */
+  bottom: 0;
+  left: 0;
   background-color: rgba(0,0,0,0.4);
   width: 100%;
   height: 30%;
@@ -83,7 +96,12 @@
 }
 .flip-card{
   display: inline-block;
-  padding: 20px;
+  /*
+    INSTRUCTOR COMMENT
+    I would recommend using margin so your animation only starts when you hover over
+    the card itself, not empty space around it.
+  */
+  margin: 30px 20px;
 }
 /* Homepage */
 
